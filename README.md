@@ -30,3 +30,9 @@ protoc --go_out=./golang --go-grpc_out=./golang --go_opt=paths=source_relative -
 go mod init github.com/jsanchezmen/microservices-proto/golang/{service}
 go mod tidy
 ```
+
+## Import
+
+```
+go get -u github.com/huseyinbabal/microservices-proto/golang/order@v1.2.3
+```
