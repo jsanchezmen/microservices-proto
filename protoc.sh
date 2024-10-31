@@ -22,7 +22,10 @@ go mod tidy
 cd ../../
 echo "git add . and commit proto update"
 git add . && git commit -am "proto update" || true
+echo "git push origin HEAD:main"
 git push origin HEAD:main
+echo "git tag -fa golang/${SERVICE_NAME}/${RELEASE_VERSION}"
 git tag -fa golang/${SERVICE_NAME}/${RELEASE_VERSION} \
-  -m "golang/${SERVICE_NAME}/${RELEASE_VERSION}" 
+  -m "golang/${SERVICE_NAME}/${RELEASE_VERSION}"
+echo "git push origin refs/tags/golang/${SERVICE_NAME}/${RELEASE_VERSION}"   
 git push origin refs/tags/golang/${SERVICE_NAME}/${RELEASE_VERSION}
