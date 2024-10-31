@@ -17,9 +17,10 @@ protoc --go_out=./golang --go_opt=paths=source_relative \
  ./${SERVICE_NAME}/*.proto
 cd golang/${SERVICE_NAME}
 go mod init \
-  github.com/huseyinbabal/microservices-proto/golang/${SERVICE_NAME} || true
+  github.com/jsanchezmen/microservices-proto/golang/${SERVICE_NAME} || true
 go mod tidy
 cd ../../
+echo "git add . and commit proto update"
 git add . && git commit -am "proto update" || true
 git push origin HEAD:main
 git tag -fa golang/${SERVICE_NAME}/${RELEASE_VERSION} \
