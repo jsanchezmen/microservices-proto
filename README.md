@@ -41,4 +41,7 @@ go get -u github.com/jsanchezmen/microservices-proto/golang/order@v1.2.3
 
 ```
 git tag -a v0.0.1-beta -m "v0.0.1-beta"
+git push --tags
+# Force push
+git push -f --tags
 ```
