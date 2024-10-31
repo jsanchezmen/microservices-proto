@@ -34,5 +34,5 @@ go mod tidy
 ## Import
 
 ```
-go get -u github.com/huseyinbabal/microservices-proto/golang/order@v1.2.3
+go get -u github.com/jsanchezmen/microservices-proto/golang/order@v1.2.3
 ```
