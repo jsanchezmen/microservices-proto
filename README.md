@@ -26,4 +26,7 @@ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 ### GO
 ```
 protoc --go_out=./golang --go-grpc_out=./golang --go_opt=paths=source_relative --go-grpc_opt=paths=source_relative order/order.proto
+# Steps for creating go module
+go mod init github.com/jsanchezmen/microservices-proto/golang/{service}
+go mod tidy
 ```
