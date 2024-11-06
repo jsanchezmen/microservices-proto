@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         #service: ["order", "payment", "shipping"]
-        service: ["order"]
+        service: ["order", "payment"]
     steps:
       - name: Install Go
         uses: actions/setup-go@v5
