@@ -34,6 +34,7 @@ go mod tidy
 ## Import
 
 ```
+go get -u github.com/jsanchezmen/microservices-proto/golang/{componenet}@{version}
 go get -u github.com/jsanchezmen/microservices-proto/golang/order@v1.2.3
 ```
 
